@@ -8,19 +8,6 @@
 
 import Foundation
 
-protocol BSFlowController {
-    
-    associatedtype TBook
-        
-    func addBook()
-    func listAllBooks()
-    func removeBook()
-    func searchBooks()
-    func clearAllBooks()
-    
-    func dbURL()
-}
-
 struct BookshelfFlowController<TService: BSService> : BSFlowController where TService.Item == BookRepresentable {
     
     typealias TBook = TService.Item
