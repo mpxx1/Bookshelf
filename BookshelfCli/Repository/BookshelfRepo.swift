@@ -8,7 +8,7 @@
 import Foundation
 
 #if os(macOS)
-class BookshelfMacRepo : BSRepository {
+final class BookshelfMacRepo : BSRepository {
     
     typealias Item = BookRepresentable
     

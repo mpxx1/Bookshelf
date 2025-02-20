@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol BSRepository {
+protocol BSRepository: AnyObject {
     
     associatedtype Item
     
